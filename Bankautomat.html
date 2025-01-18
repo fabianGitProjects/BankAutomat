@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geldautomat</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="Bankautomat.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="header">Kontostand</h1>
+        <div id="balance" class="balance">40</div>
+        <div class="layoutEinAusgaben">
+            <div id="einnahmenLayout" class="tile">
+               <span id="Einnahmen">Einnahmen</span>
+               <span id="EinnahmenValue">50</span>
+            </div>
+            <div id="ausgabenLayout" class="tile">
+                <span id="ausgaben">Ausgaben</span>
+                <span id="ausgabenValue">10</span>
+            </div>
+        
+        </div>
+
+        <div id="transactionList" class="transaction-list">
+            <div class="transaction">
+                <div class="column">
+                    <div class="type">Auszahlung</div>
+                </div>
+                <div class="column">
+                    <div class="amount">10</div>
+                </div>
+
+            </div>
+            <div class="transaction">
+                <div class="column">
+                    <div class="type">Einzahlung</div>
+                </div>
+                <div class="column">
+                    <div class="amount">50</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button id="depositButton" class="action-button">Einzahlen</button>
+            <button id="withdrawButton" class="action-button">Abheben</button>
+        </div>
+
+
+    </div>
+
+
+   <script src="Bankautomat.js"></script>
+</body>
+</html>

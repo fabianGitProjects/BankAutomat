@@ -1,0 +1,124 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 255, 255)
+}
+
+.container{
+    display: block;
+    justify-content: space-evenly;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.header{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.balance{
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.balance::after{
+    content: " EUR";
+}
+
+.layoutEinAusgaben{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background-color: rgba(124, 194, 255, 0.431);
+    padding: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px;
+    
+}
+
+.tile::after{
+    content:" EUR"
+}
+
+.transaction-list{
+    padding:0;
+    margin-bottom: 25px;
+    height:140px;
+    overflow: auto;
+}
+
+.transaction{
+    display:flex;
+}
+
+.transaction .column{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  padding: 3px;
+}
+
+.transaction .type {
+text-align: left;
+margin-left:70px;
+margin-right: 0px;
+}
+
+.transaction .amount{
+    width: 50%;
+    text-align: end;
+    margin-left:20px;
+  
+}
+
+.transaction .amount::after{
+    content: " EUR";
+}
+
+.action-buttons:hover .action-button{
+    opacity: 0.4;
+}
+.action-buttons .action-button:hover{
+    cursor:pointer;
+    opacity: 1;
+}
+
+.action-buttons{
+display: flex;
+justify-content:space-between;
+width: 100%;
+}
+
+.action-button{
+    padding: 11px;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+#depositButton{
+    background-color:rgba(94, 246, 104, 0.866);
+    border: none;
+    border-bottom-left-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color:aliceblue;
+}
+
+#withdrawButton{
+    background-color:rgba(244, 88, 88, 0.866);
+    border:none;
+    border-bottom-right-radius: 10px;
+    
+    font-weight: bold;
+    font-size: 16px;
+    color:aliceblue;
+  
+}
